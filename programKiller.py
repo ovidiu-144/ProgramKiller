@@ -9,7 +9,7 @@ def win32gui_proces_list(process_list):
     pids = []
     for title, pid in process_list:
         if pid not in pids:
-            os.win32gui(pid, signal.SIGTERM)
+            os.kill(pid, signal.SIGTERM)
             pids.append(pid)
         print(f"Am inchis procesul {pid}")
 
@@ -38,3 +38,4 @@ def main():
 
 if __name__=="__main__":
     main()
+
