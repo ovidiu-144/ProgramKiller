@@ -20,6 +20,7 @@ The wish of automatization of closing programs. Very annoying when using a lot o
 Clone the repository:
 
 git clone https://github.com/ovidiu-144/ProgramKiller.git
+```bash
 cd ProgramKiller
 
 ## ▶️ Usage
