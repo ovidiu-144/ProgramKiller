@@ -4,8 +4,8 @@ Developed a program to safely close running applications on a Windows workstatio
 
 ## 🎯 Project Motivation
 
-The wish of automatization of closing programs. Very annoying when using a lot of programs
-
+With the increasing number of applications running simultaneously, manually closing programs can become inefficient and slow.
+This project aims to automate that process, providing a simple and reliable solution.
 
 ## 🚀 Features
 
