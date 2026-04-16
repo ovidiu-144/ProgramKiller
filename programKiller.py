@@ -12,11 +12,15 @@ import time
 # win32process.GetWindowThreadProcessId trimite pid-ul
 def kill_proces_list(process_list):
     pids = []
-    for title, pid in process_list:
-        if pid not in pids:
-            os.kill(pid, signal.SIGTERM)
-            pids.append(pid)
-        print(f"Am inchis procesul {pid}")
+    try:
+        for title, pid in process_list:
+            if pid not in pids:
+                os.kill(pid, signal.SIGTERM)
+                pids.append(pid)
+            print(f"Am inchis procesul {pid}")
+    except Exception:
+        pass
+
 
 
 
